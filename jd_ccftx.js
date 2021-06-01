@@ -1,10 +1,16 @@
 /*
 城城领现金 柠檬城城自动提现
 活动时间：2021-05-25到2021-06-03
+ 脚本或许兼容: QuantumultX, Surge, Loon, JSBox, Node.js
+
+===========Quantumultx===============
+[task_local]
+#柠檬城城自动提现
+0 0 * * * http://nm66.top/jd_cctx.js, tag=柠檬城城自动提现, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+
 */
-// [task_local]
-// #柠檬城城自动提现
-// */5 0 * * * http://nm66.top/jd_cctx.js, tag=柠檬城城自动提现, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+
+
 
 const $ = new Env('柠檬城城自动提现');
 const notify = $.isNode() ? require('./sendNotify') : '';
