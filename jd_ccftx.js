@@ -6,8 +6,14 @@
 ===========Quantumultx===============
 [task_local]
 #柠檬城城自动提现
-0 0 * * * http://nm66.top/jd_cctx.js, tag=柠檬城城自动提现, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+0 0 * * * https://raw.githubusercontent.com/ycfnzz/JD_Script/main/jd_ccftx.js, tag=柠檬城城自动提现, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 
+================Loon==============
+[Script]
+cron "0 0 * * *" script-path=https://raw.githubusercontent.com/ycfnzz/JD_Script/main/jd_ccftx.js,tag=柠檬城城自动提现
+
+===============Surge=================
+柠檬城城自动提现 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/ycfnzz/JD_Script/main/jd_ccftx.js
 */
 
 
