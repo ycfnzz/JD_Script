@@ -9,17 +9,17 @@
 ============Quantumultx===============
 [task_local]
 #总裁送好礼
-0 20,21,22,23 31 5 * https://cdn.jsdelivr.net/gh/Wenmoux/scripts/babelDiy.js, tag=总裁送好礼, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+30 8,9,10 * * * https://cdn.jsdelivr.net/gh/Wenmoux/scripts/babelDiy.js, tag=总裁送好礼, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 
 ================Loon==============
 [Script]
-cron "0 20,21,22,23 31 5 *" script-path=https://g/jd_scripts/raw/ tag=总裁送好礼
+cron "30 8,9,10 * * *" script-path=https://g/jd_scripts/raw/ tag=总裁送好礼
 
 ===============Surge=================
-总裁送好礼 = type=cron,cronexp="0 20,21,22,23 31 5 *",wake-system=1,timeout=3600,script-path=https://cdn.jsdelivr.net/gh/Wenmoux/scripts/js/babelDiy.js
+总裁送好礼 = type=cron,cronexp="30 8,9,10 * * *",wake-system=1,timeout=3600,script-path=https://cdn.jsdelivr.net/gh/Wenmoux/scripts/js/babelDiy.js
 
 ============小火箭=========
-总裁送好礼 = type=cron,script-path=https://cdn.jsdelivr.net/gh/Wenmoux/scripts/js/babelDiy.js, cronexpr="20 8 * * *", timeout=3600, enable=true
+总裁送好礼 = type=cron,script-path=https://cdn.jsdelivr.net/gh/Wenmoux/scripts/js/babelDiy.js, cronexpr="30 8,9,10 * * *", timeout=3600, enable=true
 
  */
 const $ = new Env('总裁送好礼');
